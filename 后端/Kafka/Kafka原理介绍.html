@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kafka | 吃饭睡觉打豆豆</title>
+    <meta name="description" content=" ">
+    <link rel="icon" href="/favicon.png">
+  <link rel="manifest" href="/images/pic.jpg">
+  <link rel="apple-touch-icon" href="/images/pic.jpg">
+  <meta http-quiv="pragma" cotent="no-cache">
+  <meta http-quiv="pragma" cotent="no-cache,must-revalidate">
+  <meta http-quiv="expires" cotent="0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.0f5aefa9.css" as="style"><link rel="preload" href="/assets/js/app.2ed4a716.js" as="script"><link rel="preload" href="/assets/js/2.0d3085da.js" as="script"><link rel="preload" href="/assets/js/5.b5ba2def.js" as="script"><link rel="prefetch" href="/assets/js/10.56332b24.js"><link rel="prefetch" href="/assets/js/11.dc70378b.js"><link rel="prefetch" href="/assets/js/12.c27a5cc7.js"><link rel="prefetch" href="/assets/js/13.cd445f8c.js"><link rel="prefetch" href="/assets/js/14.a519b732.js"><link rel="prefetch" href="/assets/js/15.71d77324.js"><link rel="prefetch" href="/assets/js/16.2282c2e6.js"><link rel="prefetch" href="/assets/js/17.84ef61f7.js"><link rel="prefetch" href="/assets/js/18.f341b90a.js"><link rel="prefetch" href="/assets/js/19.28081019.js"><link rel="prefetch" href="/assets/js/20.400cb076.js"><link rel="prefetch" href="/assets/js/21.54d5f8e0.js"><link rel="prefetch" href="/assets/js/22.302d416f.js"><link rel="prefetch" href="/assets/js/23.bcb3ed03.js"><link rel="prefetch" href="/assets/js/24.7b575690.js"><link rel="prefetch" href="/assets/js/25.eef0e9ab.js"><link rel="prefetch" href="/assets/js/26.e5319516.js"><link rel="prefetch" href="/assets/js/27.7a39b9af.js"><link rel="prefetch" href="/assets/js/28.53ab4bfa.js"><link rel="prefetch" href="/assets/js/29.6da66f35.js"><link rel="prefetch" href="/assets/js/3.579889d3.js"><link rel="prefetch" href="/assets/js/30.7ce82f78.js"><link rel="prefetch" href="/assets/js/31.4f595fb1.js"><link rel="prefetch" href="/assets/js/32.4ea77839.js"><link rel="prefetch" href="/assets/js/33.7fa19738.js"><link rel="prefetch" href="/assets/js/34.ca110b46.js"><link rel="prefetch" href="/assets/js/35.af16c3a0.js"><link rel="prefetch" href="/assets/js/36.146105e1.js"><link rel="prefetch" href="/assets/js/37.a725ceea.js"><link rel="prefetch" href="/assets/js/38.cadf49e9.js"><link rel="prefetch" href="/assets/js/39.537fbddf.js"><link rel="prefetch" href="/assets/js/4.6eb19324.js"><link rel="prefetch" href="/assets/js/40.e9f8e128.js"><link rel="prefetch" href="/assets/js/41.19f8fb66.js"><link rel="prefetch" href="/assets/js/42.0a39bbea.js"><link rel="prefetch" href="/assets/js/43.0ed9d746.js"><link rel="prefetch" href="/assets/js/44.89f92846.js"><link rel="prefetch" href="/assets/js/45.2e313083.js"><link rel="prefetch" href="/assets/js/46.a4cc6906.js"><link rel="prefetch" href="/assets/js/47.7061b060.js"><link rel="prefetch" href="/assets/js/48.d40e2261.js"><link rel="prefetch" href="/assets/js/49.07b001ce.js"><link rel="prefetch" href="/assets/js/50.5b6f7890.js"><link rel="prefetch" href="/assets/js/51.23496ee3.js"><link rel="prefetch" href="/assets/js/52.687b8402.js"><link rel="prefetch" href="/assets/js/53.c79069f6.js"><link rel="prefetch" href="/assets/js/54.69c422ad.js"><link rel="prefetch" href="/assets/js/55.0b2eddb9.js"><link rel="prefetch" href="/assets/js/56.a908f57d.js"><link rel="prefetch" href="/assets/js/57.c1b2dbbd.js"><link rel="prefetch" href="/assets/js/58.07a79fec.js"><link rel="prefetch" href="/assets/js/59.0e076c5f.js"><link rel="prefetch" href="/assets/js/6.6725e2bb.js"><link rel="prefetch" href="/assets/js/60.45e33df3.js"><link rel="prefetch" href="/assets/js/61.8aca7760.js"><link rel="prefetch" href="/assets/js/62.302ed63d.js"><link rel="prefetch" href="/assets/js/63.097511c4.js"><link rel="prefetch" href="/assets/js/64.a9c1111f.js"><link rel="prefetch" href="/assets/js/65.5c7e6580.js"><link rel="prefetch" href="/assets/js/66.4d31114d.js"><link rel="prefetch" href="/assets/js/67.a9492502.js"><link rel="prefetch" href="/assets/js/68.0faaaa93.js"><link rel="prefetch" href="/assets/js/69.bfbae9d0.js"><link rel="prefetch" href="/assets/js/7.5d32872a.js"><link rel="prefetch" href="/assets/js/8.63ab5f4b.js"><link rel="prefetch" href="/assets/js/9.a0ac733d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0f5aefa9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">吃饭睡觉打豆豆</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">BackEnd</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Java</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/后端/Java/JavaSE/变量.html" class="nav-link">JavaSE</a></li><li class="dropdown-subitem"><a href="/后端/Java/JavaEE/" class="nav-link">JavaEE</a></li></ul></li><li class="dropdown-item"><!----> <a href="/后端/Redis/Redis从入门到高可用分布式实践/目录说明.html" class="nav-link">Redis</a></li><li class="dropdown-item"><!----> <a href="/后端/Kafka/Kafka原理介绍.html" class="nav-link">Kafka</a></li><li class="dropdown-item"><!----> <a href="/后端/Python/" class="nav-link">Python</a></li><li class="dropdown-item"><h4>Spring</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/后端/Spring源码解析/Spring源码解析.html" class="nav-link">Spring源码解析</a></li></ul></li><li class="dropdown-item"><h4>Linux</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/linux/" class="nav-link">Linux</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">FrontEnd</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/frontend/" class="nav-link">Frontend</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构不难/" class="nav-link">数据结构不难</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/算法很美/" class="nav-link">算法很美</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/大数据/Hadoop/README.html" class="nav-link">Hadoop</a></li></ul></div></div> <a href="https://github.com/DYX884877791/DYX884877791.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">BackEnd</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Java</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/后端/Java/JavaSE/变量.html" class="nav-link">JavaSE</a></li><li class="dropdown-subitem"><a href="/后端/Java/JavaEE/" class="nav-link">JavaEE</a></li></ul></li><li class="dropdown-item"><!----> <a href="/后端/Redis/Redis从入门到高可用分布式实践/目录说明.html" class="nav-link">Redis</a></li><li class="dropdown-item"><!----> <a href="/后端/Kafka/Kafka原理介绍.html" class="nav-link">Kafka</a></li><li class="dropdown-item"><!----> <a href="/后端/Python/" class="nav-link">Python</a></li><li class="dropdown-item"><h4>Spring</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/后端/Spring源码解析/Spring源码解析.html" class="nav-link">Spring源码解析</a></li></ul></li><li class="dropdown-item"><h4>Linux</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/linux/" class="nav-link">Linux</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">FrontEnd</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/frontend/" class="nav-link">Frontend</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构不难/" class="nav-link">数据结构不难</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/算法很美/" class="nav-link">算法很美</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/大数据/Hadoop/README.html" class="nav-link">Hadoop</a></li></ul></div></div> <a href="https://github.com/DYX884877791/DYX884877791.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">首页</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Kafka</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/后端/Kafka/Kafka原理介绍.html" class="active sidebar-link">Kafka</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#kafka简介" class="sidebar-link">Kafka简介</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#消息队列" class="sidebar-link">消息队列</a></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#为什么需要消息队列" class="sidebar-link">为什么需要消息队列</a></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#kafka-2" class="sidebar-link">Kafka</a></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#kafka架构" class="sidebar-link">Kafka架构</a></li></ul></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#集群部署" class="sidebar-link">集群部署</a></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#kafka工作流程分析" class="sidebar-link">Kafka工作流程分析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#写入方式" class="sidebar-link">写入方式</a></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#分区" class="sidebar-link">分区</a></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#副本" class="sidebar-link">副本</a></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#broker保存消息" class="sidebar-link">Broker保存消息</a></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#zookeeper的存储结构" class="sidebar-link">zookeeper的存储结构</a></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#producer的写入流程" class="sidebar-link">Producer的写入流程</a></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#kafka的ack机制" class="sidebar-link">Kafka的ACK机制</a></li></ul></li><li class="sidebar-sub-header"><a href="/后端/Kafka/Kafka原理介绍.html#kafka高级api" class="sidebar-link">Kafka高级API</a></li></ul></li><li><a href="/后端/Kafka/KafkaAPI的使用.html" class="sidebar-link">KafkaAPI</a></li><li><a href="/后端/Kafka/Kafka常见问题.html" class="sidebar-link">Kafka常见问题</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="kafka"><a href="#kafka" aria-hidden="true" class="header-anchor">#</a> Kafka</h1> <h2 id="kafka简介"><a href="#kafka简介" aria-hidden="true" class="header-anchor">#</a> Kafka简介</h2> <p>Kafka是一个<strong>分布式</strong>的<strong>基于发布/订阅模式</strong>的<strong>消息队列</strong>，主要应用于大数据实时处理领域</p> <h3 id="消息队列"><a href="#消息队列" aria-hidden="true" class="header-anchor">#</a> 消息队列</h3> <p>消息队列中间件是分布式系统中重要的组件，主要解决应用解耦，异步消息，流量削锋等问题，实现高性能，高可用，可伸缩和最终一致性架构。目前使用较多的消息队列有ActiveMQ，RabbitMQ，ZeroMQ，Kafka，MetaMQ，RocketMQ。
+消息队列的两种模式：</p> <ol><li><p>点对点模式（一对一，消费者主动拉取数据，消息收到后消息清除）
+点对点模型通常是一个基于拉取或者轮询的消息传送模型，这种模型从队列中请求信息，而不是将消息推送到客户端。这个模型的特点是发送到队列的消息被一个且只有一个接收者接收处理，即使有多个消息监听者也是如此。</p></li> <li><p>发布/订阅模式（一对多，数据生产后，推送给所有订阅者）
+发布订阅模型则是一个基于推送的消息传送模型。发布订阅模型可以有多种不同的订阅者，临时订阅者只在主动监听主题时才接收消息，而持久订阅者则监听主题的所有消息，即使当前订阅者不可用，处于离线状态。</p></li></ol> <h3 id="为什么需要消息队列"><a href="#为什么需要消息队列" aria-hidden="true" class="header-anchor">#</a> 为什么需要消息队列</h3> <ol><li><p>解耦：允许你独立的扩展或修改两边的处理过程，只要确保它们遵守同样的接口约束。</p></li> <li><p>冗余：消息队列把数据进行持久化直到它们已经被完全处理，通过这一方式规避了数据丢失风险。许多消息队列所采用的&quot;插入-获取-删除&quot;范式中，在把一个消息从队列中删除之前，需要你的处理系统明确的指出该消息已经被处理完毕，从而确保你的数据被安全的保存直到你使用完毕。</p></li> <li><p>扩展性：因为消息队列解耦了你的处理过程，所以增大消息入队和处理的频率是很容易的，只要另外增加处理过程即可。</p></li> <li><p>灵活性 &amp; 峰值处理能力：在访问量剧增的情况下，应用仍然需要继续发挥作用，但是这样的突发流量并不常见。如果为以能处理这类峰值访问为标准来投入资源随时待命无疑是巨大的浪费。使用消息队列能够使关键组件顶住突发的访问压力，而不会因为突发的超负荷的请求而完全崩溃。</p></li> <li><p>可恢复性：系统的一部分组件失效时，不会影响到整个系统。消息队列降低了进程间的耦合度，所以即使一个处理消息的进程挂掉，加入队列中的消息仍然可以在系统恢复后被处理。</p></li> <li><p>顺序保证：在大多使用场景下，数据处理的顺序都很重要。大部分消息队列本来就是排序的，并且能保证数据会按照特定的顺序来处理。（Kafka保证一个Partition内的消息的有序性）</p></li> <li><p>缓冲：有助于控制和优化数据流经过系统的速度，解决生产消息和消费消息的处理速度不一致的情况。</p></li> <li><p>异步通信：很多时候，用户不想也不需要立即处理消息。消息队列提供了异步处理机制，允许用户把一个消息放入队列，但并不立即处理它。想向队列中放入多少消息就放多少，然后在需要的时候再去处理它们。</p></li></ol> <h3 id="kafka-2"><a href="#kafka-2" aria-hidden="true" class="header-anchor">#</a> Kafka</h3> <ol><li>Apache Kafka是一个开源消息系统，由Scala写成。是由Apache软件基金会开发的一个开源消息系统项目。</li> <li>Kafka最初是由LinkedIn公司开发，并于2011年初开源。2012年10月从Apache Incubator毕业。该项目的目标是为处理实时数据提供一个统一、高通量、低等待的平台。</li> <li>Kafka是一个分布式消息队列。Kafka对消息保存时根据Topic进行归类，发送消息者称为Producer，消息接受者称为Consumer，此外kafka集群有多个kafka实例组成，每个实例(server)称为broker。</li> <li>无论是kafka集群，还是consumer都依赖于zookeeper集群保存一些meta信息，来保证系统可用性。</li></ol> <h3 id="kafka架构"><a href="#kafka架构" aria-hidden="true" class="header-anchor">#</a> Kafka架构</h3> <p><a data-fancybox="" title="" href="/assets/img/kafka.dd3dee36.png"><img src="/assets/img/kafka.dd3dee36.png" alt=""></a></p> <ol><li><p>Producer ：消息生产者，就是向kafka broker发消息的客户端；</p></li> <li><p>Consumer ：消息消费者，向kafka broker取消息的客户端；</p></li> <li><p>Topic ：可以理解为一个队列；</p></li> <li><p>Consumer Group （CG）：这是kafka用来实现一个topic消息的广播（发给所有的consumer）和单播（发给任意一个consumer）的手段。一个topic可以有多个CG。topic的消息会复制（不是真的复制，是概念上的）到所有的CG，但每个partion只会把消息发给该CG中的一个consumer。如果需要实现广播，只要每个consumer有一个独立的CG就可以了。要实现单播只要所有的consumer在同一个CG。用CG还可以将consumer进行自由的分组而不需要多次发送消息到不同的topic；</p></li> <li><p>Broker ：一台kafka服务器就是一个broker。一个集群由多个broker组成。一个broker可以容纳多个topic；</p></li> <li><p>Partition：为了实现扩展性，一个非常大的topic可以分布到多个broker（即服务器）上，一个topic可以分为多个partition，每个partition是一个有序的队列。partition中的每条消息都会被分配一个有序的id（offset）。kafka只保证按一个partition中的顺序将消息发给consumer，不保证一个topic的整体（多个partition间）的顺序；</p></li> <li><p>Offset：kafka的存储文件都是按照offset.kafka来命名，用offset做名字的好处是方便查找。例如你想找位于2049的位置，只要找到2048.kafka的文件即可。当然the first offset就是00000000000.kafka；</p></li></ol> <h2 id="集群部署"><a href="#集群部署" aria-hidden="true" class="header-anchor">#</a> 集群部署</h2> <ol start="0"><li><p>准备三台机器：hadoop02、hadoop03、hadoop04</p></li> <li><p>使用kafka_2.11-0.11.0.2.tgz包，并解压</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 module<span class="token punctuation">]</span>$ <span class="token function">cd</span> kafka_2.11-0.11.0.2/
+<span class="token punctuation">[</span>dyx@hadoop02 kafka_2.11-0.11.0.2<span class="token punctuation">]</span>$ ll
+总用量 56
+drwxr-xr-x.  3 dyx dyx  4096 11月 11 2017 bin
+drwxr-xr-x.  2 dyx dyx  4096 4月  28 00:31 config
+drwxr-xr-x.  2 dyx dyx  4096 4月  22 06:50 libs
+-rw-r--r--.  1 dyx dyx 28824 11月 11 2017 LICENSE
+drwxrwxr-x. 20 dyx dyx  4096 4月  22 09:14 logs
+-rw-r--r--.  1 dyx dyx   336 11月 11 2017 NOTICE
+drwxr-xr-x.  2 dyx dyx  4096 11月 11 2017 site-docs
+</code></pre></div></li> <li><p>编辑config/server.properties</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 指定brokerid，不同机器节点的broker.id必须不同</span>
+broker.id<span class="token operator">=</span>0 
+<span class="token comment"># 指定可以删除topic，默认为false</span>
+delete.topic.enable<span class="token operator">=</span>true
+<span class="token comment"># 处理网络请求的线程数量</span>
+num.network.threads<span class="token operator">=</span>3
+<span class="token comment"># 用来处理磁盘IO的现成数量</span>
+num.io.threads<span class="token operator">=</span>8
+<span class="token comment"># 发送套接字的缓冲区大小</span>
+socket.send.buffer.bytes<span class="token operator">=</span>102400
+<span class="token comment"># 接收套接字的缓冲区大小</span>
+socket.receive.buffer.bytes<span class="token operator">=</span>102400
+<span class="token comment"># 请求套接字的缓冲区大小</span>
+socket.request.max.bytes<span class="token operator">=</span>104857600
+<span class="token comment"># kafka运行日志存放的路径，这个目录不止存放日志，kafka存储的数据也会放在此目录，需要预先创建	</span>
+log.dirs<span class="token operator">=</span>/opt/module/kafka/logs
+<span class="token comment"># topic在当前broker上的分区个数</span>
+num.partitions<span class="token operator">=</span>1
+<span class="token comment"># 用来恢复和清理data下数据的线程数量</span>
+num.recovery.threads.per.data.dir<span class="token operator">=</span>1
+<span class="token comment"># kafka存储的数据保留的最长时间，超时将被删除，默认为7天</span>
+log.retention.hours<span class="token operator">=</span>168
+<span class="token comment"># 配置连接Zookeeper的集群地址</span>
+zookeeper.connect<span class="token operator">=</span>hadoop02:2181,hadoop03:2181,hadoop04:2181
+</code></pre></div></li> <li><p>bin目录下的脚本文件</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ll
+总用量 124
+-rwxr-xr-x. 1 dyx dyx 1335 11月 11 2017 connect-distributed.sh
+-rwxr-xr-x. 1 dyx dyx 1332 11月 11 2017 connect-standalone.sh
+-rwxr-xr-x. 1 dyx dyx  861 11月 11 2017 kafka-acls.sh
+-rwxr-xr-x. 1 dyx dyx  873 11月 11 2017 kafka-broker-api-versions.sh
+-rwxr-xr-x. 1 dyx dyx  864 11月 11 2017 kafka-configs.sh
+-rwxr-xr-x. 1 dyx dyx  945 11月 11 2017 kafka-console-consumer.sh
+-rwxr-xr-x. 1 dyx dyx  944 11月 11 2017 kafka-console-producer.sh
+-rwxr-xr-x. 1 dyx dyx  871 11月 11 2017 kafka-consumer-groups.sh
+-rwxr-xr-x. 1 dyx dyx  872 11月 11 2017 kafka-consumer-offset-checker.sh
+-rwxr-xr-x. 1 dyx dyx  948 11月 11 2017 kafka-consumer-perf-test.sh
+-rwxr-xr-x. 1 dyx dyx  869 11月 11 2017 kafka-delete-records.sh
+-rwxr-xr-x. 1 dyx dyx  862 11月 11 2017 kafka-mirror-maker.sh
+-rwxr-xr-x. 1 dyx dyx  886 11月 11 2017 kafka-preferred-replica-election.sh
+-rwxr-xr-x. 1 dyx dyx  959 11月 11 2017 kafka-producer-perf-test.sh
+-rwxr-xr-x. 1 dyx dyx  874 11月 11 2017 kafka-reassign-partitions.sh
+-rwxr-xr-x. 1 dyx dyx  868 11月 11 2017 kafka-replay-log-producer.sh
+-rwxr-xr-x. 1 dyx dyx  874 11月 11 2017 kafka-replica-verification.sh
+-rwxr-xr-x. 1 dyx dyx 7027 11月 11 2017 kafka-run-class.sh
+-rwxr-xr-x. 1 dyx dyx 1376 11月 11 2017 kafka-server-start.sh
+-rwxr-xr-x. 1 dyx dyx  975 11月 11 2017 kafka-server-stop.sh
+-rwxr-xr-x. 1 dyx dyx  870 11月 11 2017 kafka-simple-consumer-shell.sh
+-rwxr-xr-x. 1 dyx dyx  945 11月 11 2017 kafka-streams-application-reset.sh
+-rwxr-xr-x. 1 dyx dyx  863 11月 11 2017 kafka-topics.sh
+-rwxr-xr-x. 1 dyx dyx  958 11月 11 2017 kafka-verifiable-consumer.sh
+-rwxr-xr-x. 1 dyx dyx  958 11月 11 2017 kafka-verifiable-producer.sh
+drwxr-xr-x. 2 dyx dyx 4096 11月 11 2017 windows
+-rwxr-xr-x. 1 dyx dyx  867 11月 11 2017 zookeeper-security-migration.sh
+-rwxr-xr-x. 1 dyx dyx 1393 11月 11 2017 zookeeper-server-start.sh
+-rwxr-xr-x. 1 dyx dyx  978 11月 11 2017 zookeeper-server-stop.sh
+-rwxr-xr-x. 1 dyx dyx  968 11月 11 2017 zookeeper-shell.sh
+</code></pre></div><ul><li>kafka-server-start.sh：启动kafka服务端的脚本，启动时需要指定server.properties配置文件</li> <li>kafka-server-stop.sh：停止kafka服务端的脚本</li> <li>kafka-topics.sh：对topic进行管理的脚本</li></ul></li> <li><p>启动Kafka服务端（在三台机器上都启动kafka）：
+注意：启动kafka之前需要先启动zookeeper，另外在命令中可以添加<code>-daemon</code>选项可以使kafka在后台运行。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-server-start.sh <span class="token punctuation">..</span>/config/server.properties
+<span class="token punctuation">[</span>2019-05-16 03:22:45,067<span class="token punctuation">]</span> INFO KafkaConfig values:
+     advertised.host.name <span class="token operator">=</span> null
+     advertised.listeners <span class="token operator">=</span> null
+     advertised.port <span class="token operator">=</span> null
+     alter.config.policy.class.name <span class="token operator">=</span> null
+     authorizer.class.name <span class="token operator">=</span>
+     auto.create.topics.enable <span class="token operator">=</span> <span class="token boolean">true</span>
+     auto.leader.rebalance.enable <span class="token operator">=</span> <span class="token boolean">true</span>
+     background.threads <span class="token operator">=</span> 10
+     broker.id <span class="token operator">=</span> 0
+     <span class="token punctuation">..</span>.
+</code></pre></div></li> <li><p>停止Kafka：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-server-stop.sh stop
+</code></pre></div></li> <li><p>创建topic</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-topics.sh --zookeeper hadoop02:2181 --create --replication-factor 3 --partitions 2 --topic testtopic1
+Created topic <span class="token string">&quot;testtopic1&quot;</span><span class="token keyword">.</span>
+</code></pre></div><ul><li>--topic 定义topic名</li> <li>--replication-factor  定义副本数，副本数要小于启动的broker数量，否则会提示Error while executing topic command : replication factor: 3 larger than available brokers: 1
+<ol><li>控制消息保存在几个broker(服务器)上，一般情况下等于broker的个数。</li> <li>如果没有在创建时显示指定或通过API向一个不存在的topic生产消息时会使用broker(server.properties)中的default.replication.factor配置的数量</li></ol></li> <li>--partitions  定义分区数
+<ol><li>控制topic将分片成多少个log。可以显示指定，如果不指定则会使用broker(server.properties)中的num.partitions配置的数量</li> <li>虽然增加分区数可以提供kafka集群的吞吐量、但是过多的分区数或者或是单台服务器上的分区数过多，会增加不可用及延迟的风险。因为多的分区数，意味着需要打开更多的文件句柄、增加点到点的延时、增加客户端的内存消耗。</li> <li>分区数也限制了consumer的并行度，即限制了并行consumer消息的线程数不能大于分区数</li> <li>分区数也限制了producer发送消息是指定的分区。如创建topic时分区设置为1，producer发送消息时通过自定义的分区方法指定分区为2或以上的数都会出错的；这种情况可以通过alter –partitions 来增加分区数。</li></ol></li></ul></li> <li><p>查看topic</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-topics.sh --zookeeper hadoop02:2181 --list
+__consumer_offsets
+testtopic1
+</code></pre></div></li> <li><p>在kafka中数据是如何存储的呢？存储在logs目录下</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ <span class="token function">cd</span> <span class="token punctuation">..</span>/logs
+<span class="token punctuation">[</span>dyx@hadoop02 logs<span class="token punctuation">]</span>$ ll
+总用量 2152
+-rw-rw-r--. 1 dyx dyx       0 4月  22 07:21 cleaner-offset-checkpoint
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-1
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-10
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-13
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-16
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-19
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-22
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-25
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-28
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-31
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-34
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-37
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-4
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-40
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-43
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-46
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-49
+drwxrwxr-x. 2 dyx dyx    4096 4月  22 07:50 __consumer_offsets-7
+-rw-rw-r--. 1 dyx dyx  157151 5月  16 03:43 controller.log
+-rw-rw-r--. 1 dyx dyx   51707 4月  22 07:56 controller.log.2019-04-22-07
+-rw-rw-r--. 1 dyx dyx   34404 4月  22 08:56 controller.log.2019-04-22-08
+-rw-rw-r--. 1 dyx dyx   86414 4月  22 09:14 controller.log.2019-04-22-09
+drwxrwxr-x. 2 dyx dyx    4096 5月  16 03:31 firsttopic-0
+-rw-rw-r--. 1 dyx dyx       0 4月  22 07:21 kafka-authorizer.log
+-rw-rw-r--. 1 dyx dyx       0 4月  22 07:21 kafka-request.log
+-rw-rw-r--. 1 dyx dyx   15249 5月  16 03:41 kafkaServer-gc.log.0.current
+-rw-rw-r--. 1 dyx dyx    1272 5月  16 03:31 log-cleaner.log
+-rw-rw-r--. 1 dyx dyx     172 4月  22 07:21 log-cleaner.log.2019-04-22-07
+-rw-rw-r--. 1 dyx dyx     378 4月  22 09:14 log-cleaner.log.2019-04-22-09
+-rw-rw-r--. 1 dyx dyx       4 5月  16 03:43 log-start-offset-checkpoint
+-rw-rw-r--. 1 dyx dyx      54 4月  22 07:21 meta.properties
+-rw-rw-r--. 1 dyx dyx     469 5月  16 03:43 recovery-point-offset-checkpoint
+-rw-rw-r--. 1 dyx dyx     469 5月  16 03:43 replication-offset-checkpoint
+-rw-rw-r--. 1 dyx dyx  144481 5月  16 03:43 server.log
+-rw-rw-r--. 1 dyx dyx   56703 4月  22 07:51 server.log.2019-04-22-07
+-rw-rw-r--. 1 dyx dyx     966 4月  22 08:51 server.log.2019-04-22-08
+-rw-rw-r--. 1 dyx dyx   12317 4月  22 09:14 server.log.2019-04-22-09
+-rw-rw-r--. 1 dyx dyx 1217850 5月  16 03:43 state-change.log
+-rw-rw-r--. 1 dyx dyx   98044 4月  22 07:50 state-change.log.2019-04-22-07
+-rw-rw-r--. 1 dyx dyx  178705 4月  22 09:14 state-change.log.2019-04-22-09
+drwxrwxr-x. 2 dyx dyx    4096 5月  16 03:36 testtopic-0
+drwxrwxr-x. 2 dyx dyx    4096 5月  16 03:43 testtopic1-0
+drwxrwxr-x. 2 dyx dyx    4096 5月  16 03:43 testtopic1-1
+</code></pre></div><p>有两个目录testtopic1-0、testtopic1-1，进入其中一个</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 logs<span class="token punctuation">]</span>$ <span class="token function">cd</span> testtopic1-0
+<span class="token punctuation">[</span>dyx@hadoop02 testtopic1-0<span class="token punctuation">]</span>$ ll
+总用量 0
+-rw-rw-r--. 1 dyx dyx 10485760 5月  16 03:43 00000000000000000000.index
+-rw-rw-r--. 1 dyx dyx        0 5月  16 03:43 00000000000000000000.log
+-rw-rw-r--. 1 dyx dyx 10485756 5月  16 03:43 00000000000000000000.timeindex
+-rw-rw-r--. 1 dyx dyx        0 5月  16 03:43 leader-epoch-checkpoint
+</code></pre></div></li> <li><p>发送消息</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-console-producer.sh --broker-list hadoop02:9092 --topic testtopic1
+<span class="token operator">&gt;</span>
+</code></pre></div><p>注意，运行此命令指定的是broker-list节点而非zookeeper节点，9092是kafka对外的端口，同时此命令会进入&quot;&gt;&quot;，输入生产的消息。</p></li> <li><p>消费消息（另开一个窗口，运行下面的命令）</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-console-consumer.sh --zookeeper hadoop02:2181 --topic testtopic1
+Using the ConsoleConsumer with old consumer is deprecated and will be removed <span class="token keyword">in</span> a future major release. Consider using the new consumer by passing <span class="token punctuation">[</span>bootstrap-server<span class="token punctuation">]</span> instead of <span class="token punctuation">[</span>zookeeper<span class="token punctuation">]</span>.
+</code></pre></div><p>提示信息：使用bootstrap-server选项代替zookeeper选项，因为在Kafka的新版本中，（Kafka-0.11以后）将offset维护在kafka集群中的leader副本中，即上面的所见的__consumer_offsets topic，并且默认提供了kafka_consumer_groups.sh脚本供用户查看consumer信息，而不放在zookeeper中，避免了多一次的访问zookeeper，提高了效率。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-console-consumer.sh --bootstrap-server hadoop02:9092 --topic testtopic1
+</code></pre></div></li> <li><p>在生产者端发送数据（输入hello world），在消费者端可以消费到数据</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-console-producer.sh --broker-list hadoop02:9092 --topic testtopic1
+<span class="token operator">&gt;</span>hello world
+<span class="token operator">&gt;</span>
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-console-consumer.sh --zookeeper hadoop02:2181 --topic testtopic1
+Using the ConsoleConsumer with old consumer is deprecated and will be removed <span class="token keyword">in</span> a future major release. Consider using the new consumer by passing <span class="token punctuation">[</span>bootstrap-server<span class="token punctuation">]</span> instead of <span class="token punctuation">[</span>zookeeper<span class="token punctuation">]</span>.
+hello world
+</code></pre></div></li> <li><p>如果消费者端断开后重连，再消费则会接着以前消费过的数据往后消费，如果要消费者端从头开始消费，则是这个命令（添加--from-beginning）</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-console-consumer.sh --zookeeper hadoop02:2181 --topic testtopic1 --from-beginning 
+</code></pre></div></li> <li><p>查看topic的详情信息</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-topics.sh --zookeeper hadoop02:2181 --describe --topic testtopic1
+  Topic:testtopic1        PartitionCount:2        ReplicationFactor:3     Configs:
+     Topic: testtopic1       Partition: 0    Leader: 0       Replicas: 0,1,2 Isr: 0,1,2
+     Topic: testtopic1       Partition: 1    Leader: 1       Replicas: 1,2,0 Isr: 1,2,0
+</code></pre></div><p>有两个分区，三个副本，Isr可以用于选举</p></li> <li><p>删除topic</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ ./kafka-topics.sh --delete --zookeeper hadoop02:2181 --topic testtopic1  
+</code></pre></div></li></ol> <h2 id="kafka工作流程分析"><a href="#kafka工作流程分析" aria-hidden="true" class="header-anchor">#</a> Kafka工作流程分析</h2> <h3 id="写入方式"><a href="#写入方式" aria-hidden="true" class="header-anchor">#</a> 写入方式</h3> <p>producer采用推（push）模式将消息发布到broker，每条消息都被追加（append）到分区（patition）中，属于顺序写磁盘（开辟了一整块磁盘空间，顺序写磁盘效率比随机写内存要高，保障kafka吞吐率）</p> <h3 id="分区"><a href="#分区" aria-hidden="true" class="header-anchor">#</a> 分区</h3> <p>消息发送时都被发送到一个topic，其本质就是一个目录，而topic是由一些Partition Logs(分区日志)组成，其组织结构如图
+<a data-fancybox="" title="" href="./assets/partition.png"><img src="/assets/img/partition.be43f5c7.png" alt=""></a> <a data-fancybox="" title="" href="./assets/partition1.png"><img src="/assets/img/partition1.dd381391.png" alt=""></a></p> <p>每个Partition中的消息都是有序的，生产的消息被不断追加到Partition log上，其中的每一个消息都被赋予了一个唯一的offset值。</p> <ol><li>分区的原因
+<ul><li>方便在集群中扩展，每个Partition可以通过调整以适应它所在的机器，而一个topic又可以有多个Partition组成，因此整个集群就可以适应任意大小的数据了;</li> <li>可以提高并发，因为可以以Partition为单位读写了;</li></ul></li> <li>分区的原则
+<ul><li>指定了patition，则直接使用；</li> <li>未指定patition但指定key，通过对key的value进行hash出一个patition;</li> <li>patition和key都未指定，使用轮询选出一个patition;</li></ul></li></ol> <h3 id="副本"><a href="#副本" aria-hidden="true" class="header-anchor">#</a> 副本</h3> <p>同一个partition可能会有多个replication（对应server.properties配置中的 default.replication.factor=N）。没有replication的情况下，一旦broker 宕机，其上所有 patition 的数据都不可被消费，同时producer也不能再将数据存于其上的patition。引入replication之后，同一个partition可能会有多个replication，而这时需要在这些replication之间选出一个leader，producer和consumer只与这个leader交互，其它replication作为follower从leader 中复制数据。</p> <h3 id="broker保存消息"><a href="#broker保存消息" aria-hidden="true" class="header-anchor">#</a> Broker保存消息</h3> <ol><li><p>数据的存储方式
+Kafka具有存储功能，默认保存数据时间为7天或者大小1G，也就是说kafka broker上的数据超7天或者1G，就会被清理掉。这些数据存放在broker服务器上，以log文件的形式存在。物理上把topic分成一个或多个patition（对应 server.properties 中的num.partitions=3配置），每个patition物理上对应一个文件夹（该文件夹存储该patition的所有消息和索引文件）</p> <ol><li><p>先创建一个topic，指定分区数为3，副本数为2</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop03 bin<span class="token punctuation">]</span>$ ./kafka-topics.sh --create --zookeeper hadoop02:2181 --partitions 3 --replication-factor 2 --topic topic0821
+Created topic <span class="token string">&quot;topic0821&quot;</span><span class="token keyword">.</span>
+</code></pre></div></li> <li><p>查看topic的信息</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop04 bin<span class="token punctuation">]</span>$ ./kafka-topics.sh --zookeeper hadoop02:2181 --describe --topic topic0821
+Topic:topic0821 PartitionCount:3        ReplicationFactor:2     Configs:
+  Topic: topic0821        Partition: 0    Leader: 0       Replicas: 0,2   Isr: 0,2
+  Topic: topic0821        Partition: 1    Leader: 1       Replicas: 1,0   Isr: 1,0
+  Topic: topic0821        Partition: 2    Leader: 2       Replicas: 2,1   Isr: 2,1
+</code></pre></div></li> <li><p>分别在三个broker上的logs目录下存在该topic的三个partition数据</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop02 bin<span class="token punctuation">]</span>$ <span class="token function">cd</span> <span class="token punctuation">..</span>/logs
+<span class="token punctuation">[</span>dyx@hadoop02 logs<span class="token punctuation">]</span>$ ll
+<span class="token punctuation">..</span>.
+drwxrwxr-x. 2 dyx dyx    4096 5月  16 06:10 topic0821-0
+drwxrwxr-x. 2 dyx dyx    4096 5月  16 06:10 topic0821-1
+<span class="token punctuation">[</span>dyx@hadoop02 logs<span class="token punctuation">]</span>$ <span class="token function">cd</span> topic0821-1   
+<span class="token punctuation">[</span>dyx@hadoop02 topic0821-1<span class="token punctuation">]</span>$ ll
+总用量 0
+-rw-rw-r--. 1 dyx dyx 10485760 5月  16 06:10 00000000000000000000.index
+-rw-rw-r--. 1 dyx dyx        0 5月  16 06:10 00000000000000000000.log
+-rw-rw-r--. 1 dyx dyx 10485756 5月  16 06:10 00000000000000000000.timeindex
+-rw-rw-r--. 1 dyx dyx        0 5月  16 06:10 leader-epoch-checkpoint
+</code></pre></div><p>在logs/topic0821-1/00000000000000000000.log中的一长串“0”是这个日志文件的offset位置。当日志文件达到时间或者大小的上限时，就会生成下一个日志文件，命名的就是下一个offset位置了。另外两个文件，index文件存放的是topic的offset，timeindex是存放的是时间戳</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop03 bin<span class="token punctuation">]</span>$ <span class="token function">cd</span> <span class="token punctuation">..</span>/logs
+<span class="token punctuation">[</span>dyx@hadoop03 logs<span class="token punctuation">]</span>$ ll
+<span class="token punctuation">..</span>.
+drwxrwxr-x. 2 dyx dyx   4096 5月   1 16:55 topic0821-1
+drwxrwxr-x. 2 dyx dyx   4096 5月   1 16:55 topic0821-2
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>dyx@hadoop04 bin<span class="token punctuation">]</span>$ <span class="token function">cd</span> <span class="token punctuation">..</span>/logs
+<span class="token punctuation">[</span>dyx@hadoop04 logs<span class="token punctuation">]</span>$ ll
+<span class="token punctuation">..</span>.
+drwxrwxr-x. 2 dyx dyx  4096 5月   2 19:13 topic0821-0
+/drwxrwxr-x. 2 dyx dyx  4096 5月   2 19:13 topic0821-2
+</code></pre></div></li></ol></li> <li><p>数据的存储策略</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 日志保存时间 (hours|minutes)，默认为7天（168小时）。超过这个时间会根据policy处理数据。bytes和minutes无论哪个先达到都会触发。</span>
+log.retention.hours<span class="token operator">=</span>168
+<span class="token comment"># 日志数据存储的最大字节数。超过这个时间会根据policy处理数据。</span>
+log.retention.bytes<span class="token operator">=</span>1073741824
+</code></pre></div><p>需要注意的是，因为Kafka读取特定消息的时间复杂度为O(1)，即与文件大小无关，所以这里删除过期文件与提高 Kafka 性能无关。</p></li> <li><p>offset存储方式
+consumer消费后的offset有两种存储方式，一种是存放在broker的日志目录中，
+另一种方式是存放在zookeeper中。两种存放方式和你使用kafka-console-consumer命令使用的选项有关。如果使用的是bootstrap-server，那么就存放在broker；如果使用的是–zookeeper那么就存放在zookeeper。broker存放offset是kafka从0.9版本开始，提供的新的消费方式。原因是zookeeper来存放，还是有许多弊端，不方便灵活控制，效率不高。</p></li></ol> <h3 id="zookeeper的存储结构"><a href="#zookeeper的存储结构" aria-hidden="true" class="header-anchor">#</a> zookeeper的存储结构</h3> <ol><li>在zookeeper中存储Kafka有关的信息：
+<a data-fancybox="" title="" href="./assets/kafka_zk.png"><img src="/assets/img/kafka_zk.2d718546.png" alt=""></a></li> <li>使用ZooInspector工具查看Zookeeper节点信息：
+<a data-fancybox="" title="" href="./assets/broker1.png"><img src="/assets/img/broker1.4cef0f31.png" alt=""></a></li></ol> <h3 id="producer的写入流程"><a href="#producer的写入流程" aria-hidden="true" class="header-anchor">#</a> Producer的写入流程</h3> <ul><li>producer 先从 zookeeper集群保存的&quot;/brokers/.../state&quot; 节点找到该 partition 的 leader</li> <li>producer 将消息发送给该 leader</li> <li>leader 将消息写入本地 log</li> <li>followers 从 leader pull 消息，写入本地 log 后 leader 发送 ACK</li> <li>leader 收到所有 ISR 中的 replica 的 ACK 后，增加 HW（high watermark，最后 commit 的 offset） 并向 producer 发送 ACK</li></ul> <p><a data-fancybox="" title="" href="./assets/kafka_write.jpg"><img src="/assets/img/kafka_write.0cfcbd88.jpg" alt=""></a></p> <p>其中follower的ACK确认机制有三种：一般情况下存在三种情况：</p> <ul><li>At most once 消息可能会丢，但绝不会重复传输</li> <li>At least one 消息绝不会丢，但可能会重复传输</li> <li>Exactly once 每条消息肯定会被传输一次且仅传输一次</li></ul> <p>当 producer 向 broker 发送消息时，一旦这条消息被 commit，由于 replication 的存在，它就不会丢。但是如果 producer 发送数据给 broker 后，遇到网络问题而造成通信中断，那 Producer 就无法判断该条消息是否已经 commit。虽然 Kafka 无法确定网络故障期间发生了什么，但是 producer 可以生成一种类似于主键的东西，发生故障时幂等性的重试多次，这样就做到了 Exactly once，但目前还并未实现。所以目前默认情况下一条消息从 producer 到 broker 是确保了 At least once，可通过设置 producer 异步发送实现At most once。</p> <h3 id="kafka的ack机制"><a href="#kafka的ack机制" aria-hidden="true" class="header-anchor">#</a> Kafka的ACK机制</h3> <p>当producer向leader发送数据时，可以通过request.required.acks参数来设置数据可靠性的级别：</p> <div class="language-properties extra-class"><pre class="language-properties"><code><span class="token attr-name">request.required.acks</span><span class="token punctuation">=</span><span class="token attr-value">0</span>
+</code></pre></div><ul><li>0：这意味着producer无需等待来自broker的确认而继续发送下一批消息。这种情况下数据传输效率最高，但是数据可靠性确是最低的。(不要求副本存到数据)</li> <li>1（默认）：这意味着producer在ISR中的leader已成功收到的数据并得到确认后发送下一条message。如果leader宕机了，则会丢失数据。(要求一个副本存到数据，这个副本就是leader副本)</li> <li>-1(或者是all)：producer需要等待ISR中的所有follower都确认接收到数据后才算一次发送完成，可靠性最高。(要求所有副本都存到数据)
+但是这样也不能保证数据不丢失，比如当ISR中只有leader时（前面ISR那一节讲到，
+ISR中的成员由于某些情况会增加也会减少，最少就只剩一个leader），这样就变成了acks=1的情况。</li></ul> <p>如果要提高数据的可靠性，在设置request.required.acks=-1的同时，也要min.insync.replicas这个参数
+(可以在broker或者topic层面进行设置)的配合，这样才能发挥最大的功效。min.insync.replicas这个参数设定
+ISR中的最小副本数是多少，默认值为1，当且仅当request.required.acks参数设置为-1时，此参数才生效。
+如果ISR中的副本数少于min.insync.replicas配置的数量时，客户端会返回异常：
+org.apache.kafka.common.errors.NotEnoughReplicasExceptoin: Messages are rejected since there are fewer in-sync replicas than required</p> <h2 id="kafka高级api"><a href="#kafka高级api" aria-hidden="true" class="header-anchor">#</a> Kafka高级API</h2> <p>Kafka提供了两套API：高级API和低级API</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/" class="prev router-link-active">首页</a></span> <span class="next"><a href="/后端/Kafka/KafkaAPI的使用.html">KafkaAPI</a>→
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.2ed4a716.js" defer></script><script src="/assets/js/2.0d3085da.js" defer></script><script src="/assets/js/5.b5ba2def.js" defer></script>
+  </body>
+</html>

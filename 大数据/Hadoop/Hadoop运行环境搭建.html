@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hadoop运行环境搭建 | 吃饭睡觉打豆豆</title>
+    <meta name="description" content=" ">
+    <link rel="icon" href="/favicon.png">
+  <link rel="manifest" href="/images/pic.jpg">
+  <link rel="apple-touch-icon" href="/images/pic.jpg">
+  <meta http-quiv="pragma" cotent="no-cache">
+  <meta http-quiv="pragma" cotent="no-cache,must-revalidate">
+  <meta http-quiv="expires" cotent="0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.0f5aefa9.css" as="style"><link rel="preload" href="/assets/js/app.2ed4a716.js" as="script"><link rel="preload" href="/assets/js/2.0d3085da.js" as="script"><link rel="preload" href="/assets/js/53.c79069f6.js" as="script"><link rel="prefetch" href="/assets/js/10.56332b24.js"><link rel="prefetch" href="/assets/js/11.dc70378b.js"><link rel="prefetch" href="/assets/js/12.c27a5cc7.js"><link rel="prefetch" href="/assets/js/13.cd445f8c.js"><link rel="prefetch" href="/assets/js/14.a519b732.js"><link rel="prefetch" href="/assets/js/15.71d77324.js"><link rel="prefetch" href="/assets/js/16.2282c2e6.js"><link rel="prefetch" href="/assets/js/17.84ef61f7.js"><link rel="prefetch" href="/assets/js/18.f341b90a.js"><link rel="prefetch" href="/assets/js/19.28081019.js"><link rel="prefetch" href="/assets/js/20.400cb076.js"><link rel="prefetch" href="/assets/js/21.54d5f8e0.js"><link rel="prefetch" href="/assets/js/22.302d416f.js"><link rel="prefetch" href="/assets/js/23.bcb3ed03.js"><link rel="prefetch" href="/assets/js/24.7b575690.js"><link rel="prefetch" href="/assets/js/25.eef0e9ab.js"><link rel="prefetch" href="/assets/js/26.e5319516.js"><link rel="prefetch" href="/assets/js/27.7a39b9af.js"><link rel="prefetch" href="/assets/js/28.53ab4bfa.js"><link rel="prefetch" href="/assets/js/29.6da66f35.js"><link rel="prefetch" href="/assets/js/3.579889d3.js"><link rel="prefetch" href="/assets/js/30.7ce82f78.js"><link rel="prefetch" href="/assets/js/31.4f595fb1.js"><link rel="prefetch" href="/assets/js/32.4ea77839.js"><link rel="prefetch" href="/assets/js/33.7fa19738.js"><link rel="prefetch" href="/assets/js/34.ca110b46.js"><link rel="prefetch" href="/assets/js/35.af16c3a0.js"><link rel="prefetch" href="/assets/js/36.146105e1.js"><link rel="prefetch" href="/assets/js/37.a725ceea.js"><link rel="prefetch" href="/assets/js/38.cadf49e9.js"><link rel="prefetch" href="/assets/js/39.537fbddf.js"><link rel="prefetch" href="/assets/js/4.6eb19324.js"><link rel="prefetch" href="/assets/js/40.e9f8e128.js"><link rel="prefetch" href="/assets/js/41.19f8fb66.js"><link rel="prefetch" href="/assets/js/42.0a39bbea.js"><link rel="prefetch" href="/assets/js/43.0ed9d746.js"><link rel="prefetch" href="/assets/js/44.89f92846.js"><link rel="prefetch" href="/assets/js/45.2e313083.js"><link rel="prefetch" href="/assets/js/46.a4cc6906.js"><link rel="prefetch" href="/assets/js/47.7061b060.js"><link rel="prefetch" href="/assets/js/48.d40e2261.js"><link rel="prefetch" href="/assets/js/49.07b001ce.js"><link rel="prefetch" href="/assets/js/5.b5ba2def.js"><link rel="prefetch" href="/assets/js/50.5b6f7890.js"><link rel="prefetch" href="/assets/js/51.23496ee3.js"><link rel="prefetch" href="/assets/js/52.687b8402.js"><link rel="prefetch" href="/assets/js/54.69c422ad.js"><link rel="prefetch" href="/assets/js/55.0b2eddb9.js"><link rel="prefetch" href="/assets/js/56.a908f57d.js"><link rel="prefetch" href="/assets/js/57.c1b2dbbd.js"><link rel="prefetch" href="/assets/js/58.07a79fec.js"><link rel="prefetch" href="/assets/js/59.0e076c5f.js"><link rel="prefetch" href="/assets/js/6.6725e2bb.js"><link rel="prefetch" href="/assets/js/60.45e33df3.js"><link rel="prefetch" href="/assets/js/61.8aca7760.js"><link rel="prefetch" href="/assets/js/62.302ed63d.js"><link rel="prefetch" href="/assets/js/63.097511c4.js"><link rel="prefetch" href="/assets/js/64.a9c1111f.js"><link rel="prefetch" href="/assets/js/65.5c7e6580.js"><link rel="prefetch" href="/assets/js/66.4d31114d.js"><link rel="prefetch" href="/assets/js/67.a9492502.js"><link rel="prefetch" href="/assets/js/68.0faaaa93.js"><link rel="prefetch" href="/assets/js/69.bfbae9d0.js"><link rel="prefetch" href="/assets/js/7.5d32872a.js"><link rel="prefetch" href="/assets/js/8.63ab5f4b.js"><link rel="prefetch" href="/assets/js/9.a0ac733d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0f5aefa9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">吃饭睡觉打豆豆</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">BackEnd</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Java</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/后端/Java/JavaSE/变量.html" class="nav-link">JavaSE</a></li><li class="dropdown-subitem"><a href="/后端/Java/JavaEE/" class="nav-link">JavaEE</a></li></ul></li><li class="dropdown-item"><!----> <a href="/后端/Redis/Redis从入门到高可用分布式实践/目录说明.html" class="nav-link">Redis</a></li><li class="dropdown-item"><!----> <a href="/后端/Kafka/Kafka原理介绍.html" class="nav-link">Kafka</a></li><li class="dropdown-item"><!----> <a href="/后端/Python/" class="nav-link">Python</a></li><li class="dropdown-item"><h4>Spring</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/后端/Spring源码解析/Spring源码解析.html" class="nav-link">Spring源码解析</a></li></ul></li><li class="dropdown-item"><h4>Linux</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/linux/" class="nav-link">Linux</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">FrontEnd</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/frontend/" class="nav-link">Frontend</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构不难/" class="nav-link">数据结构不难</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/算法很美/" class="nav-link">算法很美</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/大数据/Hadoop/README.html" class="nav-link">Hadoop</a></li></ul></div></div> <a href="https://github.com/DYX884877791/DYX884877791.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">BackEnd</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Java</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/后端/Java/JavaSE/变量.html" class="nav-link">JavaSE</a></li><li class="dropdown-subitem"><a href="/后端/Java/JavaEE/" class="nav-link">JavaEE</a></li></ul></li><li class="dropdown-item"><!----> <a href="/后端/Redis/Redis从入门到高可用分布式实践/目录说明.html" class="nav-link">Redis</a></li><li class="dropdown-item"><!----> <a href="/后端/Kafka/Kafka原理介绍.html" class="nav-link">Kafka</a></li><li class="dropdown-item"><!----> <a href="/后端/Python/" class="nav-link">Python</a></li><li class="dropdown-item"><h4>Spring</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/后端/Spring源码解析/Spring源码解析.html" class="nav-link">Spring源码解析</a></li></ul></li><li class="dropdown-item"><h4>Linux</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/linux/" class="nav-link">Linux</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">FrontEnd</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/frontend/" class="nav-link">Frontend</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构不难/" class="nav-link">数据结构不难</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/算法很美/" class="nav-link">算法很美</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/大数据/Hadoop/README.html" class="nav-link">Hadoop</a></li></ul></div></div> <a href="https://github.com/DYX884877791/DYX884877791.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="hadoop运行环境搭建"><a href="#hadoop运行环境搭建" aria-hidden="true" class="header-anchor">#</a> Hadoop运行环境搭建</h1> <h2 id="虚拟机环境准备"><a href="#虚拟机环境准备" aria-hidden="true" class="header-anchor">#</a> 虚拟机环境准备</h2> <ol><li><p>虚拟机克隆</p></li> <li><p>修改静态IP</p> <ul><li>修改网卡信息(虚拟的Mac地址)：<div class="language-shell extra-class"><pre class="language-text"><code>[root@hadoop02 ~]$ vim /etc/udev/rules.d/70-persistent-net.rules
+</code></pre></div><div class="language-shell extra-class"><pre class="language-text"><code># This file was automatically generated by the /lib/udev/write_net_rules
+# program, run by the persistent-net-generator.rules rules file.
+#
+# You can modify it, as long as you keep each rule on a single
+# line, and change only the value of the NAME= key.
+
+# PCI device 0x8086:0x100f (e1000)
+
+# PCI device 0x8086:0x100f (e1000)
+# 不同机器应该配置不同的Mac地址.
+SUBSYSTEM==&quot;net&quot;, ACTION==&quot;add&quot;, DRIVERS==&quot;?*&quot;, ATTR{address}==&quot;00:0c:29:bb:e4:6e&quot;, ATTR{type}==&quot;1&quot;, KERNEL==&quot;eth*&quot;, NAME=&quot;eth0&quot; 
+</code></pre></div></li> <li>修改连接的网卡信息：<div class="language-shell extra-class"><pre class="language-text"><code>[root@hadoop02 ~]$ vim /etc/sysconfig/network-scripts/ifcfg-eth0
+</code></pre></div><div class="language-shell extra-class"><pre class="language-text"><code>DEVICE=eth0
+TYPE=Ethernet
+UUID=74d8297d-a658-4f14-909f-fb3c7fdba436
+ONBOOT=yes
+NM_CONTROLLED=yes
+BOOTPROTO=static
+HWADDR=00:0c:29:bb:e4:6e
+DEFROUTE=yes
+PEERDNS=yes
+PEERROUTES=yes
+IPV4_FAILURE_FATAL=yes
+IPV6INIT=no
+NAME=&quot;System eth0&quot;
+LAST_CONNECT=1554828622
+IPADDR=192.168.13.129
+GATEWAY=192.168.13.2
+DNS1=192.168.13.2   
+</code></pre></div></li> <li>要修改的地方：
+<ul><li>ONBOOT=yes（启动机器时自动启动网络）</li> <li>BOOTPROTO=static（手动设定ip地址）</li> <li>HWADDR=00:0c:29:bb:e4:6e（与上面的Mac地址一致）</li> <li>IPADDR=192.168.13.129（设定当前机器的IP地址，设定在与网关同一网段）</li> <li>GATEWAY=192.168.13.2（设定网关与Vmware设定的网络编辑器的网关地址一致）</li> <li>DNS1=192.168.13.2 （设定DNS地址）</li></ul></li></ul></li> <li><p>修改主机名（Hostname）</p> <ul><li>修改当前机器主机名<div class="language-shell extra-class"><pre class="language-text"><code>[root@hadoop02 ~]$ vim /etc/sysconfig/network
+</code></pre></div><div class="language-shell extra-class"><pre class="language-text"><code>NETWORKING=yes
+HOSTNAME=hadoop02 
+</code></pre></div></li> <li>修改hosts文件<div class="language-shell extra-class"><pre class="language-text"><code>vim /etc/hosts
+</code></pre></div><div class="language-shell extra-class"><pre class="language-text"><code>127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.13.128 hadoop01
+192.168.13.129 hadoop02
+192.168.13.130 hadoop03
+192.168.13.131 hadoop04  
+</code></pre></div></li> <li>ping命令查看是否能ping通</li></ul></li> <li><p>关闭防火墙</p> <ul><li>停止运行防火墙<div class="language-shell extra-class"><pre class="language-text"><code>[root@test etc]# service iptables stop
+iptables：将链设置为政策 ACCEPT：filter                    [确定]
+iptables：清除防火墙规则：                                 [确定]
+iptables：正在卸载模块：                                   [确定]
+</code></pre></div></li> <li>查看防火墙状态<div class="language-shell extra-class"><pre class="language-text"><code>[root@test etc]# service iptables status
+iptables：未运行防火墙。
+</code></pre></div></li> <li>如果要开启或者重启防火墙运行命令：service iptables start/restart</li> <li>service命令开启以及关闭防火墙为即时生效，下次重启机器的时候会自动复原。</li> <li>如果要永久关闭防火墙：<div class="language-shell extra-class"><pre class="language-text"><code>chkconfig iptables off
+</code></pre></div></li> <li>查看状态<div class="language-shell extra-class"><pre class="language-text"><code>chkconfig --list iptables
+</code></pre></div></li> <li>永久启用防火墙<div class="language-shell extra-class"><pre class="language-text"><code>chkconfig iptables on
+</code></pre></div></li></ul></li> <li><p>创建用户以及分配权限</p> <ul><li>创建用户<div class="language-shell extra-class"><pre class="language-text"><code>[root@test ~]# useradd dyx
+</code></pre></div></li> <li>分配权限，使用root用户编辑/etc/sudoers文件，sudoers文件默认只有只读权限，如果要修改请添加写权限<div class="language-shell extra-class"><pre class="language-text"><code>[root@test ~]# cd /etc
+[root@test etc]# ll | grep sudoers
+-r--r-----.  1 root root   3729 12月  8 2015 sudoers
+[root@test etc]# chmod u+x sudoers
+[root@test ~]# vim /etc/sudoers 
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>## Allow root to run any commands anywhere
+root    ALL=(ALL)       ALL
+dyx     ALL=(ALL)       ALL 
+</code></pre></div>添加权限成功!</li></ul></li></ol> <h2 id="安装jdk以及hadoop"><a href="#安装jdk以及hadoop" aria-hidden="true" class="header-anchor">#</a> 安装JDK以及Hadoop</h2> <h3 id="安装jdk"><a href="#安装jdk" aria-hidden="true" class="header-anchor">#</a> 安装JDK</h3> <ol><li>将jdk-8u144-linux-x64.tar.gz上传至任意目录，方便管理，放置在/opt/software目录下</li> <li>将JDK解压至/opt/module目录下<div class="language-shell extra-class"><pre class="language-text"><code>tar -zxvf jdk-8u144-linux-x64.tar.gz -C /opt/module/
+</code></pre></div></li> <li>配置java环境变量
+如果当前用户是新建的dyx用户，需要加sudo<div class="language-shell extra-class"><pre class="language-text"><code>[dyx@hadoop02 module]$ sudo vim /etc/profile
+</code></pre></div>在/etc/profile文件末尾添加如下内容：<div class="language-shell extra-class"><pre class="language-text"><code>export JAVA_HOME=/opt/module/jdk1.8.0_144
+export PATH=$PATH:$JAVA_HOME/bin  
+</code></pre></div>更新环境变量<div class="language-shell extra-class"><pre class="language-text"><code>source /etc/profile
+</code></pre></div></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.2ed4a716.js" defer></script><script src="/assets/js/2.0d3085da.js" defer></script><script src="/assets/js/53.c79069f6.js" defer></script>
+  </body>
+</html>
